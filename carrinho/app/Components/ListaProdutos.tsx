@@ -15,7 +15,7 @@ export default function ListaProdutos() {
   // Estado que vai armazenar a lista de produtos obtidos da api
   const [produtos, setProdutos] = useState<Produto[]>([]);
 
-  // A lista de produtos vai ser exibida ja de cara ao carregar a pagina
+  // A lista de produtos vai ser exibida ja de cara ao carrega a pagina
   useEffect(() => {
     axios.get("https://dummyjson.com/carts")
       .then(res => {
